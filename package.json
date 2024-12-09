@@ -28,7 +28,13 @@
     "extends": [
       "react-app",
       "react-app/jest"
-    ]
+    ],
+   
+  "rules": {
+    "no-unused-vars": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/anchor-is-valid": "warn"
+  }    
   },
   "browserslist": {
     "production": [
@@ -41,5 +47,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
+  
 }
+
+

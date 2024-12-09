@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import './ContactMe.css';
-import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
+//import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollServices from '../../utilities/ScrollServices';
 import Animations from '../../utilities/Animations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPhone,
+  // faPhone,
   faEnvelope,
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faLinkedin,
   faGithub,
-  faTwitter,
+  // faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
 

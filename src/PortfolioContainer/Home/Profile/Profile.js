@@ -9,13 +9,13 @@ export default function Profile() {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a href="https://www.instagram.com/prathyusha_nareshkumar/">
                 <i className="fa fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/prathyusha-nareshkumar-profile/">
                 <i className="fa fa-linkedin"></i>
               </a>
-              <a href="#">
+              <a href="https://github.com/prathyusha1311">
                 <i className="fa fa-github"></i>
               </a>
             </div>
