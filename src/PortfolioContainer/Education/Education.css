@@ -1,0 +1,122 @@
+/* General container styling */
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.education-parent {
+    max-width: 700px;
+    width: 60%;
+}
+
+.education-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.education-box {
+    display: flex;
+    flex-direction: column; /* Adjusted to stack items vertically */
+    align-items: center;
+    flex-basis: calc(50% - 20px); /* Adjusts box size to fit two in a row */
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-box:hover {
+    transform: scale(1.05);
+}
+
+.education-logo img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px; /* Space between logo and details */
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.education-details {
+    text-align: center; /* Center align text */
+}
+
+.education-university {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.education-year {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.education-course {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.education-cgpa {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.education-coursework {
+    font-size: 14px;
+    list-style: disc;
+    padding-left: 20px;
+    color: #555;
+    text-align: left; /* Ensure list items align left */
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .education-content {
+        flex-direction: column;
+    }
+
+    .education-box {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .education-container {
+        margin: 30px 0;
+    }
+
+    .education-box {
+        padding: 15px;
+    }
+
+    .education-logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-university {
+        font-size: 16px;
+    }
+
+    .education-year,
+    .education-course,
+    .education-cgpa {
+        font-size: 14px;
+    }
+
+    .education-coursework {
+        font-size: 13px;
+    }
+}

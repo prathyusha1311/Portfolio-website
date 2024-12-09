@@ -1,0 +1,133 @@
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Project Card */
+  .project-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #333333;
+  }
+  
+  .project-technologies {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tech-chip {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 5px;
+    color: #333333;
+  }
+  
+  /* Modal Styling */
+  .project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 700px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    
+  }
+  
+  .modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content ul {
+    text-align: left;
+    margin: 15px 0;
+  }
+  
+  .modal-content ul li {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 8px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .modal-content a {
+    color: #ff5823;
+    text-decoration: none;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-modal:hover {
+    color: #ff5823;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .modal-content {
+      width: 90%;
+    }
+  }
+  

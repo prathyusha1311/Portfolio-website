@@ -1,0 +1,421 @@
+.resume-container
+{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height:fit-content;
+    margin:120px 0;
+}
+
+.resume-card{
+    display: flex;
+    height:360px;
+    width: 1000px;
+    /* background-color: tomato; */
+}
+
+.resume-bullets{
+    height:100%;
+    box-shadow: 15px 0 9px -15px #1f2235;
+    width: 320px;
+}
+
+.resume-bullet-details{
+    flex-grow: 1;
+    width:600px;
+    overflow:hidden;
+    padding:0 0 0 70px;
+}
+
+.experience-description{
+    margin: 10px 0 0 0;
+    text-align: justify;
+    max-width: 100%; 
+}
+
+.resume-details-carousal{
+    transition: transform 1s ease-out
+}
+
+.bullet-container{
+    display: flex;
+    align-items: center;
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+.bullets{
+    width:80%;
+    position: relative;
+    z-index:2;
+}
+
+.bullet{
+    display: flex;
+    align-items: center;
+    background-color: #1f2235;
+    height:40px;
+    margin:15px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width:30px;
+    transition: width 0.6s ease;
+    cursor:pointer;
+}
+
+.bullet-label {
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: "Poppins SemiBold";
+}
+
+.bullet-logo{
+    height: 16px;
+    margin: 0 30px 0 0;
+
+}
+
+.bullet-icons{
+    width: 34px;
+    height: 100%;
+    z-index: 1;
+    background-color: #1f2235;
+    position: absolute;
+}
+
+.selected-bullet{
+    color:white;
+    width:100%;
+
+
+}
+
+.resume-screen-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height:360px;
+    width: 100%;
+}
+
+.resume-heading{
+    display:flex;
+    flex-direction: column;
+}
+
+.resume-main-heading{
+position: relative;
+display: flex;
+justify-content: space-between;
+
+
+}
+
+
+/* 
+.heading-bullet{
+    position: relative;
+    left:-30px;
+    height:15px;
+    width: 15px;
+    top:5px;
+    background-color: var(--dark-orange);
+}  */
+
+.heading-bullet {
+    position: absolute; /* Ensure the bullet is positioned correctly relative to the parent */
+    left: -15px; /* Adjust as per alignment needs */
+    height: 10px;
+    width: 10px;
+    background-color: var(--dark-orange);
+    border-radius: 50%; /* Ensures circular shape */
+    display: inline-block;
+    top: 50%; /* Centers the bullet vertically */
+    transform: translateY(-50%); /* Aligns bullet with text center */
+    vertical-align: middle;
+}
+
+
+.resume-sub-heading{
+    font-size: 14px;
+    font-family: "Poppins SeriBold";
+    color:#111;
+    margin:10px 0 0 0;
+
+}
+
+.resume-heading-description{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.heading-date{
+    background-color: var(--dark-orange);
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 14px;
+    color: white;
+}
+
+
+
+.skills-scrollable-container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-icon {
+    font-size: 40px;
+    color: var(--dark-orange);
+    margin-bottom: 8px;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-level {
+    font-size: 14px;
+    color: #666;
+}
+
+
+/*scrollability*/
+/* Targeting the scrollable container */
+.skills-scrollable-container {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* WebKit browsers (Chrome, Safari) */
+.skills-scrollable-container::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.skills-scrollable-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Track color */
+    border-radius: 10px;
+}
+
+.skills-scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Thumb color */
+    border-radius: 10px;
+    border: 3px solid #f1f1f1; /* Space around thumb */
+}
+
+.skills-scrollable-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Thumb color on hover */
+}
+
+/* Firefox */
+.skills-scrollable-container {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.skills-scrollable-container {
+    position: relative;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 6px 6px -6px rgba(0, 0, 0, 0.2),
+                inset 0 -6px 6px -6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Work History section styling*/
+/* Resume.css */
+
+.work-history-section {
+    margin-top: 20px;
+}
+
+.work-history-list {
+    max-height: 400px; /* Adjust based on your design */
+    overflow-y: auto;
+    padding-right: 10px; /* Space for scrollbar */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.work-history-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.work-history-item:last-child {
+    border-bottom: none;
+}
+
+.company-logo {
+    width: 60px; /* Adjust size as needed */
+    height: 60px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.work-details {
+    flex: 1;
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.role {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.duration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
+}
+
+/* Custom scrollbar styles */
+.work-history-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.work-history-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+.work-history-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+.work-history-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*some more updation */
+/* Specific styles for the work history section */
+.resume-screen-container.work-history {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* Space for custom scrollbar */
+}
+
+/* Custom scrollbar styles */
+.resume-screen-container.work-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+.resume-screen-container.work-history::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.resume-screen-container.work-history::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Company logo styling */
+.company-logo {
+    width: 50px; /* Adjust size as needed */
+    height: 50px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+/* Work history item container */
+.work-history-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Work details container */
+.work-details {
+    flex: 1;
+}
+
+/* Company name styling */
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Role title styling */
+.role {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Duration text styling */
+.duration {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Responsibilities list styling */
+.responsibilities {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.responsibilities li {
+    margin-bottom: 5px;
+}

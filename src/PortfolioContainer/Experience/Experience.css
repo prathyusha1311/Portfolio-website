@@ -1,0 +1,153 @@
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.experience-parent {
+    max-width: 4000px;
+    width: 80%;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.experience-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.experience-role {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.experience-company {
+    font-size: 16px;
+    color: #555;
+}
+
+.experience-dates {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.experience-responsibilities {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.experience-responsibilities li {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+
+/*Mobile Responsiveness */
+/* Responsive design for tablets */
+@media only screen and (max-width: 768px) {
+    .experience-parent {
+        width: 90%;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-logo img {
+        margin-bottom: 10px;
+    }
+
+    .experience-details {
+        width: 100%;
+    }
+
+    .experience-role {
+        font-size: 18px;
+    }
+
+    .experience-company,
+    .experience-dates {
+        font-size: 14px;
+    }
+
+    .experience-responsibilities {
+        padding-left: 10px;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 480px) {
+    .experience-container {
+        margin: 30px 0;
+    }
+
+    .experience-parent {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .experience-card {
+        padding: 15px;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .experience-logo img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+
+    .experience-role {
+        font-size: 16px;
+    }
+
+    .experience-company {
+        font-size: 13px;
+    }
+
+    .experience-dates {
+        font-size: 12px;
+    }
+
+    .experience-responsibilities li {
+        font-size: 13px;
+    }
+}
+
+.experience-location {
+    font-size: 12px;
+    color: #7a7a7a; /* Adjust color as needed */
+    margin-bottom: 5px; /* Add spacing */
+}

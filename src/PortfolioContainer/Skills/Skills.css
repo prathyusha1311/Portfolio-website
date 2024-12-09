@@ -1,0 +1,133 @@
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  .skills-parent {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  /* Skills Grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Skill Card */
+  .skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-icon {
+    font-size: 30px;
+    color: #ff5823;
+  }
+  
+  .skill-name {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: #333333;
+  }
+  
+  .skill-level {
+    font-size: 12px;
+    color: #777777;
+    margin-top: 4px;
+  }
+  
+  /* Load More Button */
+  .load-more {
+    margin-top: 20px;
+  }
+  
+  .load-more .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ff5823;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .load-more .btn:hover {
+    background-color: #e04a1b;
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  
+    .skill-card {
+      padding: 8px;
+    }
+  
+    .skill-icon {
+      font-size: 24px;
+    }
+  
+    .skill-name {
+      font-size: 12px;
+    }
+  
+    .skill-level {
+      font-size: 10px;
+    }
+  
+    .load-more .btn {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
+
+  .skill-card {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.skill-level {
+    font-size: 12px;
+    color: #7a7a7a;
+}
